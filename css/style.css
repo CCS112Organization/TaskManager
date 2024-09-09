@@ -1,0 +1,215 @@
+/* Ensuring that there are no space around the design and responsive */
+body {
+    font-family: 'Inter', 'Arial';
+    font-weight: 800;
+    min-height: 900px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    row-gap: 20px;
+    column-gap: 10px;
+}
+
+/* Styles for the input */
+input {
+    font-family: 'Inter', 'Arial';
+    border-width: 0.5px;
+    text-indent: 20px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 2px 6px 0 rgba(0, 0, 0, 0.2);
+}
+
+/* Container for the list of tasks */
+.task-list {
+    width: 700px;
+    height: 890px; 
+    background-color: #134B70;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 2px 6px 0 rgba(0, 0, 0, 0.2);
+}
+
+/* Header for task list */
+h1 {
+    margin: 60px 0 0 55px;
+    font-size: 35px;
+    color: white;
+}
+
+/* Style for form inside the task list container */
+#list-form {
+    margin-top: 10px;  
+    margin-left: 45px;
+}
+
+/* Wrapper for the input and add button container */
+.wrapper {
+    width: 600px;
+    height: 38px;
+    max-width: 100%;
+    position: relative;
+    margin-top: 15px;
+}
+
+/* Style for the input field inside the wrapper */
+.wrapper input {
+    width: 100%;
+    height: 100%;
+    font-size: 18px;
+    background-color: transparent;
+    border: 1px solid white;
+    color: white;
+    border-radius: 50px;
+    text-align: right;
+    padding-right: 45px;
+    box-sizing: border-box;
+}
+
+/* Style for the add button inside the wrapper */
+.wrapper button {
+    height: 80%;
+    aspect-ratio: 1;
+    border-radius: 50%;
+    border-width: 0;
+    background-color: #508C9B;
+    color:white;
+    right: 5px;
+    top: 10%;
+    position: absolute;
+    box-shadow: 0 2px 6px 0 rgba(0, 0, 0, 0.2), 0 2px 6px 0 rgba(0, 0, 0, 0.2);
+}
+
+/* Holder for the lists */
+.list-holder {
+    width: 600px;
+    height: 670px;
+    background-color: transparent;
+    color: white;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 2px 6px 0 rgba(0, 0, 0, 0.2);
+    margin-top: 20px;
+    position: relative;
+    overflow-y: auto;
+}
+
+/* Style for each added item */
+.task-item {
+    display: flex;
+    align-items: center;
+    margin: 10px 0;
+    padding: 5px;
+    border: 1px solid white; 
+    border-radius: 10px;
+    cursor: pointer;
+    color: white;
+    font-size: 15px;
+}
+
+/* Style for the checkbox */
+.task-checkbox {
+    margin-right: 10px;
+    cursor: pointer;
+}
+
+.task-text {
+    width: 100%;
+    height: 100%;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    padding-right: 50px;
+    box-sizing: border-box;
+}
+
+/* Style for the delete button*/
+.delete-button {
+    border: none;
+    border-radius: 5px;
+    padding: 5px 10px;
+    cursor: pointer;
+    background-color: #e74c3c;
+    color: white;
+    font-size: 14px;
+}
+
+
+/* Button hover effect for delete button */
+.delete-button:hover {
+    background-color: #c0392b;
+}
+
+
+
+
+.task-details {
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+    align-items: center;
+    width: 600px;
+    height: 890px;
+    background-color: #a6a6a6;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 2px 6px 0 rgba(0, 0, 0, 0.2);
+}
+
+#details-form {
+    display: flex;
+    height: 600px;
+    margin-left: 45px;
+    justify-content: space-around;
+    flex-direction: column;
+}
+
+.task-label {
+    font-size: 24px;
+    color: #134B70;
+}
+
+#title {
+    width: 465px;
+    height: 50px;
+    font-size: 24px;
+    border-radius: 10px;
+}
+
+.description-label {
+    font-size: 24px;
+    color: #134B70;
+}
+
+textarea {
+    font-family: 'Inter', 'Arial';
+    width: 465px;
+    height: 140px;
+    padding: 15px;
+    border-radius: 10px;
+    resize: none;
+    font-size: 18px; 
+    text-indent: 8px; 
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 2px 6px 0 rgba(0, 0, 0, 0.2);
+}
+#save-button {
+    font-family: 'Inter', 'Arial';
+    width: 50px;
+    height: 30px;
+    border-radius: 5px;
+    color: white;
+    right: 0;
+    background-color: #134B70;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 2px 6px 0 rgba(0, 0, 0, 0.2);
+}
+
+#due_date {
+    font-family: 'Inter', 'Arial';
+    width: 120px;
+    height: 50px;
+    border-width: 0.5px;
+    border-radius: 5px;
+    text-indent: 3px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 2px 6px 0 rgba(0, 0, 0, 0.2);
+}
+
+.due_date-label {
+    font-size: 24px;
+    color: #134B70;
+}
