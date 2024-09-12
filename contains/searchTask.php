@@ -13,6 +13,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
             die("Prepare failed: " . $connection->error);
         }
     
+        
         $stmnt->bind_param("i", $taskId);
         $stmnt->execute();
 
