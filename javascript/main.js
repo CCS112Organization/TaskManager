@@ -57,7 +57,6 @@ function addToDatabase() {
     .then(response => response.text())
     .then(taskId => {
         console.log('Success:', taskId);
-        searchToDatabase(taskId);
         addTask(taskValue, taskId);
     })
     .catch(error => {
