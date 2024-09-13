@@ -11,7 +11,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
 
         if (!$stmt) {
             echo json_encode(['success' => false, 'error' => $connection->error]);
-            exit;
+            exit();
         }
 
         $stmt->bind_param("ii", $status, $taskId);
